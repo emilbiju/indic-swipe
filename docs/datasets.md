@@ -18,7 +18,7 @@ nav_order: 2
 
 This dataset contains keyboard traces for 193,658 words across 7 Indic languages. The input is a trace applied over a keyboard of Indic characters and the output is the intended Indic word. 
 
-| Language | Size | Dataset (small size) | Dataset (full size) | Dataset generation code | 
+| Language | Size | Dataset (small size) | Dataset (full size) | Code for generation | 
 | :------- | :-------- | | :----- |
 | Hindi  | 32415 | [download](https://github.com/emilbiju/indic-swipe/blob/master/indic-to-indic-datasets/Hindi.xlsx) | [download](https://drive.google.com/u/0/uc?export=download&confirm=-6in&id=1LETSgyAgB6kom81xmx3Sfj0BS-wS3SWB) | [code](https://github.com/emilbiju/indic-swipe/blob/master/Gesture%20generation/gesture_path_generation_hindi.py) |
 | Tamil | 24094 | [download](https://github.com/emilbiju/indic-swipe/blob/master/indic-to-indic-datasets/Tamil.xlsx) | [download](https://drive.google.com/u/0/uc?export=download&confirm=p-tn&id=1ey7E4gpgx9CBMcEbaKhuG7fVXH_qjOxi) | [code](https://github.com/emilbiju/indic-swipe/blob/master/Gesture%20generation/gesture_path_generation_tamil.py) |
