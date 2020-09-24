@@ -11,9 +11,7 @@ permalink: /docs/Model Architecture
 A detailed description of the model architecture can be found here which addresses both the Indic-to-indic and English-to-indic decoding tasks.
 
 
-[CTC Path Decoding](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/ctc_path_decoding/){: .btn .btn-purple }
-[Transliteration Generation](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/transliteration/){: .btn .btn-blue }
-[Transliteration Correction](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/transliteration_correction/){: .btn .btn-green }
+[CTC Path Decoding](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/ctc_path_decoding/){: .btn .btn-purple }  [Transliteration Generation](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/transliteration/){: .btn .btn-blue }  [Transliteration Correction](https://emilbiju.github.io/just-the-docs/docs/Model%20Architecture/transliteration_correction/){: .btn .btn-green }
 
 # Implementation Details
 
