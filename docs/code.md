@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Code
-nav_order: 2
+nav_order: 3
 ---
 
 # Datasets
@@ -18,26 +18,26 @@ nav_order: 2
 
 The code that is used to develop the neural architecture pipeline for each language is made available in the GitHub repository and can be accessed from the links below. The pipeline for Indic-to-Indic Decoding consists of the CTC Path Decoding and Spelling Correction modules.
 
-| Language | Code links| 
+| Language | Code links| Trained CTC Decoder Model | Trained Spell Correction Model |
 | :------- | :-------- |
-| Hindi  | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_hindi.py) |
-| Tamil | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_tamil.py) |
-| Bangla | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_bangla.py) |
-| Telugu | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_telugu.py) |
-| Kannada | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_kannada.py)
-| Gujrati | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_gujarati.py) |
-| Malayalam | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_malayalam.py) |
+| Hindi | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_hindi.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Hindi_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Hindi_ELMo_Correction.h5) |
+| Tamil | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_tamil.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Tamil_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Tamil_ELMo_Correction.h5) |
+| Bangla | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_bangla.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Bangla_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Bangla_ELMo_Correction.h5) |
+| Telugu | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_telugu.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Telugu_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Telugu_ELMo_Correction.h5) |
+| Kannada | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_kannada.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Kannada_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Kannada_ELMo_Correction.h5) |
+| Gujarati | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_gujarati.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Gujarati_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Gujarati_ELMo_Correction.h5) |
+| Malayalam | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_malayalam.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Malayalam_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Malayalam_ELMo_Correction.h5) |
 
 ## English-to-Indic Decoding Task
 
 The code that is used to develop the neural architecture pipeline for each language is made available in the GitHub repository and can be accessed from the links below. The pipeline for English-to-Indic Decoding consists of the CTC Path Decoding, Transliteration Generation and Transliteration Correction modules.
 
-| Language | Code links| 
+| Language | Code links| Trained CTC Decoder Model | Trained Spell Correction Model |
 | :------- | :-------- |
-| Hindi  | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_hindi.py) |
-| Tamil | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_tamil.py) |
-| Bangla | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_bangla.py) |
-| Telugu | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_telugu.py) |
-| Kannada | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_kannada.py)
-| Gujrati | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_gujarati.py) |
-| Malayalam | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_malayalam.py) |
+| Hindi | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_hindi.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Hindi_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Hindi_ELMo_Correction.h5) |
+| Tamil | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_tamil.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Tamil_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Tamil_ELMo_Correction.h5) |
+| Bangla | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_bangla.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Bangla_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Bangla_ELMo_Correction.h5) |
+| Telugu | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_telugu.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Telugu_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Telugu_ELMo_Correction.h5) |
+| Kannada | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_kannada.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Kannada_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Kannada_ELMo_Correction.h5) |
+| Gujarati | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_gujarati.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Gujarati_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Gujarati_ELMo_Correction.h5) |
+| Malayalam | [code](https://github.com/emilbiju/indic-swipe/blob/master/Indic-Indic%20Decoding/Indic_to_Indic_malayalam.py) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Malayalam_CTC.h5) | [download](https://github.com/emilbiju/indic-swipe/blob/master/trained-models/Malayalam_ELMo_Correction.h5) |
