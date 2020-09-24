@@ -4,7 +4,7 @@ title: Code and Model Weights
 nav_order: 4
 ---
 
-# Code and Trained Models
+# Code and Model Weights
 {: .no_toc }
 
 ## Table of contents
