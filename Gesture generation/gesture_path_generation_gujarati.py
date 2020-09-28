@@ -4,9 +4,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import string
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 !git clone https://github.com/iitmnlp/indic-swipe.git
 data=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Gujrati.xlsx')
 
@@ -235,8 +232,8 @@ def make_embedding_of_one_word(traj_x, traj_y):
 embeddings_all = []
 for i in range(len(traj_x_all)):
     embeddings_all.append(make_embedding_of_one_word(traj_x_all[i], traj_y_all[i]))
-    if (i%5000==0):
-        print(i)
+    #if (i%5000==0):
+    #    print(i)
 
 training_dataset = pd.DataFrame(list(zip(word_all,embeddings_all)), columns=['word','embedding'])
 
