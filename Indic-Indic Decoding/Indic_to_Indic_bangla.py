@@ -100,6 +100,7 @@ valid_chars_dict={',': 0,
 
 data_orig['embedding'] = data_orig['embedding'].apply(lambda x:ast.literal_eval(x))
 
+
 #@title CTC Model Setup
 
 import keras.backend as K
