@@ -164,9 +164,7 @@ def find_noisy_trajectory():
                 traj_tuple = mjtg(init[0],init[1],end[0],end[1],max(int(dist*0.8),1),1)
                 traj_list_x.append(traj_tuple[0])
                 traj_list_y.append(traj_tuple[1])
-                if (word == 'ख ि ड ़ क ी'):
-                    print(dist)
-                # print(max(int(dist/2),1))
+                
             # Perturb the straight line by locating a random point and 
             # fitting a polynomial through it and the start & end points
             traj_list_y_new = []
