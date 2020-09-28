@@ -1,3 +1,4 @@
+# Importing required libraries
 import numpy as np 
 import pandas as pd 
 import os
@@ -33,8 +34,9 @@ pd.set_option('display.max_colwidth', -1)
 !git clone https://github.com/iitmnlp/indic-swipe.git
 #Loading the Newscrawl data for the target language
 data_orig=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Gujarati.xlsx')
-path='/content/indic-swipe/indic-to-indic-datasets/'
 lang = 'Gujarati'
+path='/content/indic-swipe/indic-to-indic-datasets/'+lang
+
 
 
 valid_chars_dict = {',': 0,
