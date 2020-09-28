@@ -6,23 +6,9 @@ import string
 
 #Cloning the repo to import the dataset
 !git clone https://github.com/iitmnlp/indic-swipe.git
-data_orig=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Bangla.xlsx')
-
 #Loading the Newscrawl data for the target language
-path = '/content/indic-swipe/indic-to-indic-datasets/'
+data=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Bangla.xlsx')
 lang = 'Bangla'
-
-data_path = path+'Newscrawl data/'+lang+'.txt'
-
-
-data_list=[]
-for f in open(data_path,"r"):
-    data_list.append(f.split('\t')[1])
-
-#Creating a DataFrame out of the list
-data = pd.DataFrame(list(set(data_list)), columns=['indic']).sample(frac=1).reset_index()
-del data['index']
-
 
 
 row_1 = ['অ', 'আ', 'ই', 'ঈ', 'উ', 'ঊ', 'ঋ', 'এ', 'ঐ', 'ও', 'ঔ']
