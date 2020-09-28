@@ -29,6 +29,7 @@ vowels='அஆஇஈஉஊஎஏஐஒஓஔ'
 keyboard_char_len = 11
 keyboard_char_wid = 5
 
+
 samples_per_word = 1
 num_characters_on_keyboard = 55
 
