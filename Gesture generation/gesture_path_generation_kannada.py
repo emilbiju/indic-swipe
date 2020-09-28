@@ -7,9 +7,16 @@ import string
 
 #Cloning the repo to import the dataset
 !git clone https://github.com/iitmnlp/indic-swipe.git
-#Loading the Newscrawl data for the target language
-data=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Kannada.xlsx')
+path = '/content/indic-swipe/indic-words-source/'
 lang = 'Kannada'
+data_path = path+lang+'.txt'
+
+data_list=[]
+for f in open(data_path,"r"):
+    data_list.append(f.split('\t')[1])
+
+data = pd.DataFrame(list(set(data_list)), columns=['indic']).sample(frac=1).reset_index()
+del data['index']
 
 row_1 = ['ಅ', 'ಆ', 'ಇ', 'ಈ', 'ಉ', 'ಊ', 'ಋ', 'ಎ', 'ಏ', 'ಐ', 'ಒ']
 row_2 = ['ಕ', 'ಖ', 'ಗ', 'ಘ', 'ಚ', 'ಛ', 'ಜ', 'ಝ', 'ಞ', 'ಓ','ಂ']
@@ -244,8 +251,6 @@ MAX_SPAN_LENGTH = 120 # Decide based on maximum value of maxlen column
 training_dataset['maxlen']=training_dataset['embedding'].apply(lambda x:len(x)) 
 training_dataset = training_dataset[training_dataset['maxlen']<=MAX_SPAN_LENGTH-5] # +5 is only to a have a few <e>'s at the end of all sequences
 print("Length of training dataset after restricting embedding length = ", len(training_dataset))
-
-training_dataset.head()
 
 training_dataset.to_csv(path+lang+'/gesture_embeddings.csv')
 
