@@ -32,8 +32,9 @@ pd.set_option('display.max_colwidth', -1)
 #Cloning the repo to import the dataset
 !git clone https://github.com/iitmnlp/indic-swipe.git
 data_orig=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Bangla.xlsx')
-path='/content/indic-swipe/indic-to-indic-datasets/
 lang = 'Bangla'
+path='/content/indic-swipe/indic-to-indic-datasets/'+lang
+
 
 valid_chars_dict={',': 0,
  '<e>': 1,
