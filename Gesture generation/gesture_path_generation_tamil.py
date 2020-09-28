@@ -6,9 +6,18 @@ import string
 
 #Cloning the repo to import the dataset
 !git clone https://github.com/iitmnlp/indic-swipe.git
-#Loading the Newscrawl data for the target language
-data=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Tamil.xlsx')
+path = '/content/indic-swipe/indic-words-source/'
 lang = 'Tamil'
+data_path = path+lang+'.txt'
+
+data_list=[]
+for f in open(data_path,"r"):
+    data_list.append(f.split('\t')[1])
+
+data = pd.DataFrame(list(set(data_list)), columns=['indic']).sample(frac=1).reset_index()
+del data['index']
+
+
 char_set = ['ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ', 'ஊ', 'எ', 'ஏ', 'ஐ', 'ஒ', 'ஓ', 'ஔ', 'க', 'ங', 'ச', 'ஜ', 'ஞ', 
             'ட', 'ண', 'த', 'ந', 'ன', 'ப', 'ம', 'ய', 'ர', 'ற', 'ல', 'ள', 'ழ', 'வ', 'ஷ', 'ஸ', 'ஹ', 
             'ா', 'ி', 'ீ', 'ு', 'ூ', 'ெ', 'ே', 'ை', 'ொ', 'ோ', 'ௌ', '்']
@@ -67,8 +76,6 @@ char_loc_dict = {}
 for x in range(keyboard_char_wid):
     for y in range(keyboard_char_len):
         char_loc_dict[actual_keyboard[x][y]]=(3*x+1, 3*y+1)
-
-char_loc_dict
 
 loc_char_dict = {}
 for char, loc in char_loc_dict.items():
@@ -239,8 +246,6 @@ MAX_SPAN_LENGTH = 85 # Decide based on maximum value of maxlen column
 training_dataset['maxlen']=training_dataset['embedding'].apply(lambda x:len(x)) 
 training_dataset = training_dataset[training_dataset['maxlen']<=MAX_SPAN_LENGTH-5] # +5 is only to a have a few <e>'s at the end of all sequences
 print("Length of training dataset after restricting embedding length = ", len(training_dataset))
-
-training_dataset.head()
 
 training_dataset.to_csv(path+lang+'/gesture_embeddings.csv')
 
