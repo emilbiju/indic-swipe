@@ -56,8 +56,6 @@ for i in range(len(list_of_all_valid_chars)):
 for i in range(len(matras)):
     valid_chars_dict[matras[i]] = valid_chars_dict[(row_1+['ऑ'])[i+1]]
 
-valid_chars_dict
-
 num_characters_on_keyboard_for_ctc_model = len(list_of_all_valid_chars)-1
 #print("num_characters_on_keyboard_for_ctc_model = ",num_characters_on_keyboard_for_ctc_model)
 
