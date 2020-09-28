@@ -126,9 +126,6 @@ from keras.utils.generic_utils import Progbar
 from keras.preprocessing import sequence
 
 """
-authors: Yann Soullard, Cyprien Ruffino (2017)
-LITIS lab, university of Rouen (France)
-
 The CTCModel class extends the Keras Model for the use of the Connectionist Temporal Classification (CTC) 
 One makes use of the CTC proposed in tensorflow. Thus CTCModel can only be used with the backend tensorflow.
 
