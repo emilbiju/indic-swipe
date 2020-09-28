@@ -244,5 +244,6 @@ training_dataset['maxlen']=training_dataset['embedding'].apply(lambda x:len(x))
 training_dataset = training_dataset[training_dataset['maxlen']<=MAX_SPAN_LENGTH-5] # +5 is only to a have a few <e>'s at the end of all sequences
 print("Length of training dataset after restricting embedding length = ", len(training_dataset))
 
+
 training_dataset.to_csv(path+lang+'/gesture_embeddings.csv')
 
