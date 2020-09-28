@@ -4,8 +4,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import string
 
-data=pd.read_excel('/content/indic-swipe/indic-to-indic-datasets/Hindi.xlsx')
+#Cloning the repo to import the dataset
+!git clone https://github.com/iitmnlp/indic-swipe.git
+path = '/content/indic-swipe/indic-words-source/'
 lang = 'Hindi'
+data_path = path+lang+'.txt'
+
+data_list=[]
+for f in open(data_path,"r"):
+    data_list.append(f.split('\t')[1])
+
+data = pd.DataFrame(list(set(data_list)), columns=['indic']).sample(frac=1).reset_index()
+del data['index']
 
 row_1 = ['अ','आ','इ','ई','उ','ऊ','ऋ','ए','ऐ','ओ','औ']
 row_2 = ['क','ख','ग','घ','च','छ','ज','झ','ञ',u'\u093C',u'\u0902']
@@ -243,8 +253,5 @@ training_dataset['maxlen']=training_dataset['embedding'].apply(lambda x:len(x))
 training_dataset = training_dataset[training_dataset['maxlen']<=MAX_SPAN_LENGTH-5] # +5 is only to a have a few <e>'s at the end of all sequences
 
 print("Length of training dataset after restricting embedding length = ", len(training_dataset))
-
-training_dataset.head()
-
 training_dataset.to_csv(path+lang+'/gesture_embeddings.csv')
 
