@@ -1395,25 +1395,31 @@ for i in range(len(input_texts)):
         for k in range(5):
             input_texts[i][j][k] = 2*(input_texts[i][j][k]-min_list[k])/(max_list[k]-min_list[k]) - 1
 
-
-
-##### Build the CTC model for path decoding #####
+	
+##### build the CTC model for path decoding #####
 
 # Set up the encoder
 
 def create_network():
-    encoder_inputs_placeholder = Input(shape=(MAX_SPAN_LENGTH, num_characters_on_keyboard+5))
-
-    blstm = Bidirectional(LSTM(128, return_sequences=True))(encoder_inputs_placeholder)
+    encoder_input = Input(shape=(MAX_SPAN_LENGTH, num_characters_on_keyboard+5), name='Encoder_input')
+    encoded_layer = get_encoders(
+            encoder_num=1,
+            input_layer=encoder_input,
+            head_num=8,
+            hidden_dim=128,
+            attention_activation='relu',
+            feed_forward_activation='relu',
+            dropout_rate=0.05
+        ) 
+    
+    blstm = Bidirectional(LSTM(128, return_sequences=True))(encoded_layer)
     blstm = Bidirectional(LSTM(128, return_sequences=True))(blstm)
-    blstm = Bidirectional(LSTM(128, return_sequences=True))(blstm)
-   
-    dense = TimeDistributed(Dense(40, name="dense"))(blstm)
-    outrnn = Activation('softmax', name='softmax')(dense)
 
-    network = CTCModel([encoder_inputs_placeholder], [outrnn])
+    dense = TimeDistributed(Dense(40, name="dense"))(blstm) 
+    outrnn = Activation('softmax',name='softmax')(dense)
+    network = CTCModel([encoder_input], [outrnn])
     network.compile(Adam(lr=0.01))
-    return network
+    return network 
 
 network = create_network()
 
