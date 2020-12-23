@@ -12,7 +12,7 @@ permalink: /
 IndicSwipe is a collection of datasets and neural model architectures for decoding swipe gesture inputs on touch-based Indic language keyboards across 7 languages.
 {: .fs-6 .fw-300 }
 
-[About the project](#about){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/emilbiju/indic_swipe){: .btn .fs-5 .mb-4 .mb-md-0 }
+[COLING 2020 Paper](https://www.aclweb.org/anthology/2020.coling-main.87/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/iitmnlp/indic-swipe){: .btn .fs-5 .mb-4 .mb-md-0 }
 ---
 
 ## About
@@ -38,6 +38,12 @@ IndicSwipe demonstrates high decoding accuracies on both tasks varying from 70% 
 3. Two datasets of simulated word traces for supporting work on gesture typing for Indic language keyboards including low resource languages like Telugu and Kannada.
 4. The accuracies of the proposed models vary from 70 to 89% for English-to-Indic decoding and 86-95% for Indic-to-Indic decoding across the 7 languages used for the study.
 
+## Publication
+Our work on IndicSwipe has been accepted at the 28th International Conference on Compuational Linguistics ([COLING 2020](https://coling2020.org)) as a conference paper titled "Joint Transformer/RNN Architecture for Gesture Typing in Indic Languages."
+
 ## People
 
 This work has been developed by [Emil Biju](https://github.com/emilbiju), [Anirudh Sriram](https://github.com/anirudhs123), [Prof. Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk/) and [Prof. Pratyush Kumar](https://www.cse.iitm.ac.in/~pratyush/) from the Indian Institute of Technology, Madras. Ask us your questions at [emilbiju7@gmail.com](mailto:emilbiju7@gmail.com) or [anirudhsriram30799@gmail.com](mailto:anirudhsriram30799@gmail.com).
+
+## Further Work
+We plan to pursue further work on this front by developing an application that would allow live usage and testing of our models. We also plan on diversifying our dataset and models to support a wider range of Indic languages.
