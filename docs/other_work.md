@@ -6,6 +6,8 @@ has_children: false
 permalink: /docs/Other Works
 ---
 
+# Other Works
+
 # Vocabulary-constrained Question Generation with Rare Word Masking and Dual Attention
 
 ## Abstract
