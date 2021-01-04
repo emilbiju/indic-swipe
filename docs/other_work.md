@@ -18,9 +18,9 @@ Question generation is the task of generating questions from a text passage that
 This work has been published at the ACM India Joint International Conference on Data Science and Management of Data ([CODS-COMAD 2021](https://cods-comad.in)). To learn more about this work, please click on the links below:
 
 [Publication](https://dl.acm.org/doi/abs/10.1145/3430984.3431074){: .btn .btn-purple }
-[PDF](https://emilbiju.github.io/indic-swipe/assets/Vocab-constrained-QG_CODS-COMAD.pdf){: .btn .btn-red }
-[Slides](https://emilbiju.github.io/indic-swipe/assets/Cods-Comad_presentation.pdf){: .btn .btn-blue }
-[Video](https://drive.google.com/file/d/1aLCYGa4ih1FyvX0oNp0aiu9Hnf0TAked/view){: .btn .btn-green }
+[PDF](https://emilbiju.github.io/indic-swipe/assets/Vocab-constrained-QG_CODS-COMAD.pdf){: .btn .btn-blue }
+[Slides](https://emilbiju.github.io/indic-swipe/assets/Cods-Comad_presentation.pdf){: .btn .btn-green }
+[Video](https://drive.google.com/file/d/1aLCYGa4ih1FyvX0oNp0aiu9Hnf0TAked/view){: .btn .btn-red }
 
 ### Citation
 If you are referring to this work, please cite it as follows:
