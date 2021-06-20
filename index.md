@@ -71,4 +71,6 @@ If you are referring to our work, please cite it as follows:
 ## Further Work
 We plan to pursue further work on this front by developing an application that would allow live usage and testing of our models. We also plan on diversifying our dataset and models to support a wider range of Indic languages.
 
+```html
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=572j00n9cs0&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+```
